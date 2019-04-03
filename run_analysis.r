@@ -77,3 +77,9 @@ names(Combined) <- gsub("()", "", names(Combined))
 
 Final <- Combined %>% gather(key = "Measure_Type", value = "Measurement",
                              -c(Subject, Source, Activity_Description))
+Final_Average <- Final %>%
+    group_by(Subject, Measure_Type, Activity_Description) %>%
+    summarise(Average= mean(Measurement, na.rm = T))
+
+write.table(Final_Average, file = "Final_Average.txt", row.names = F)
+write.table(Final, file = "Final.txt", row.names= F)
