@@ -1,0 +1,7 @@
+Final.txt has the following columns
+======================================================
+Subject: subject ID for each of the 30 subject
+Source: indicates the data source, training or testign
+Activity_Description: six Activity_Type: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+Measure_Type: 79 different measurement (mean and std) for body accelerometer and gyroscope along three axial
+Measurement: Acutral value for the Measure_Type.
